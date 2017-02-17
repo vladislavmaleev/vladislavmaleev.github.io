@@ -1,0 +1,34 @@
+.header_menu{
+	position: fixed;
+    width: 100vw;
+    height: 30px;
+    background-color: #000;
+}
+.top{
+	font-size: 9px;
+	color: #fff;
+	display: inline-block;
+	border: 1px dotted #fff;
+}
+.block{
+	width: 300px;
+	height: 400px;
+	border: 2px solid black;
+}
+.box_2{
+margin-top: 30px;
+display: inline-block;
+}
+.column{
+	border: 2px solid grey;
+	position: fixed;
+	width: 300px;
+	height: 400px;
+	left: 50vw;
+	top: 50vh;
+	margin-left: -150px;
+	margin-top: -200px;
+	column-count: 2;
+	column-width: 125px;
+	column-rule: 1px solid #ccc;
+}
