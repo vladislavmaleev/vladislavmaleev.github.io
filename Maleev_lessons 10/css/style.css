@@ -5,7 +5,6 @@
     background-color: #000;
 }
 .top{
-	font-size: 9px;
 	color: #fff;
 	display: inline-block;
 	border: 1px dotted #fff;
@@ -28,7 +27,12 @@ display: inline-block;
 	top: 50vh;
 	margin-left: -150px;
 	margin-top: -200px;
+	padding: 20px 30px;
 	column-count: 2;
-	column-width: 125px;
+	column-width: 100px;
 	column-rule: 1px solid #ccc;
+}
+p{
+	height: 340px;
+	margin: 0;
 }
