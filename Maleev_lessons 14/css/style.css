@@ -254,11 +254,11 @@ i.fa-camera-retro {
   color: #ffffff;
   text-align: center;
   display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
   display: flex;
   justify-content: center;
-  align-item: center;
-  -webkit-justify-content: center;
-  -webkit-align-item: center;
+  align-items: center;
   -webkit-transition: all 0.2s;
   -transition: all 0.2s;
 }
