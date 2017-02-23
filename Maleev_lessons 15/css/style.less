@@ -1,0 +1,339 @@
+.open-reg{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.open-bold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+@base-black: #706b73;
+@base-red: #fa9a87;
+@white: #fff;
+@base-text: #626262;
+@bg-gray: #f5f5f5;
+@bg-tomi: #4eb2f7;
+@bg-koimona: #c049f8;
+@bg-koire: #817eff;
+@bg-lara: #f74770;
+@bg-services-list: #fbfbfb;
+body{
+	font-size: 14px;
+	.open-reg;
+	color: @base-text;
+}
+	input, button, textarea{
+		&:focus{
+		outline: none;
+	}
+}
+section{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.section-header{
+	margin-bottom: 7%;
+	h2{
+		font-size: 50px;
+		.open-bold;
+		span{
+			color: @base-red;
+		}
+	}
+	p{
+		font-size: 16px;
+	}
+}
+header{
+	background: @bg-gray url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 700px;
+	height: 100vh;
+}
+.main{
+	&-head{
+		margin-top: 3%;
+	}
+	&-logo-border{
+		border: 3px solid @base-black;
+		width: 155px;
+		height: 55px;
+		text-align: center;
+		line-height: 49px;
+		p{
+			.open-bold;
+			font-size: 36px;
+			color: @base-black;
+			span{
+				color: lighten(@base-red, 5%);
+			}
+		}
+	}
+	&-nav-bar{
+		position: relative;
+		float: right;
+		width: 55px;
+		height: 55px;
+	}
+	&-text{
+		text-align: center;
+		margin-top: 3%;
+		h1{
+			font-size: 50px;
+			.open-bold;
+			span{
+				color: @base-red;
+			}
+		}
+		p{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	&-form{
+		background-color: @white;
+		margin-top:10%;
+		padding: 35px;
+		border-radius: 2px;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		 box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		&-header{
+			text-align: center;
+			font-size:20px;
+			.open-bold;
+			span{
+				color: @base-red;
+			}
+		}
+		&-btn{
+			background-color: @base-red;
+			border: none;
+			padding: 15px 30px;
+			border-radius: 50px;
+			color: @white;
+			display: block;
+			margin: 0 auto;
+			margin-top: 30px;
+			font-size: 16px;
+			span{
+				font-size: 20px;
+			}
+			&:hover{
+			box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.15);
+			}
+			
+		}
+		input, textarea{
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid @base-text;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+	}
+}
+.line{
+	width: 30px;
+	height: 4px;
+	background-color: @base-black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	border-radius: 5px;
+	--webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+		&:before, &:after{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			content: '';
+			border-radius: 5px;
+			display: inline-block;
+			width: 30px;
+			height: 4px;
+			background-color: @base-black;
+		}
+		&:before{
+			--webkit-transform: translateY(-8px);
+			-ms-transform: translateY(-8px);
+			-o-transform: translateY(-8px);
+			transform: translateY(-8px);
+		}
+		&:after{
+			--webkit-transform: translateY(4px);
+			-ms-transform: translateY(4px);
+			-o-transform: translateY(4px);
+			transform: translateY(4px);
+		}
+}
+.process{
+	&-box{
+		color: @white;
+		padding: 25px;
+		padding-top: 35px;
+		text-align: center;	
+		i.fa{
+			font-size: 50px;
+		}
+		h4{
+			margin-top: 25px;
+			font-size: 20px;
+			.open-bold;
+		}
+		p{
+			font-size: 16px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		&:hover{
+			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+		}
+	}
+	&-btn{
+		position: absolute;
+		left: 50%;
+		margin-left: -40%;
+		bottom: -30px;
+		border: none;
+		color: @base-black;
+		padding: 15px;
+		width: 80%;
+		border-radius: 50px;
+		background-color: @white;
+		font-size: 16px;
+		&:hover{
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.21);
+		}
+	}
+}
+.btn-plus{
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 15px;
+	height: 2px;
+	display: inline-block;
+	background-color: @base-black;
+	&:before{
+		display: inline-block;
+		content: '';
+		width: 16px;
+		height: 2px;
+		background-color: @base-black;
+		position: absolute;
+		-webkit-transform: rotate(90deg) translateY(8px);
+		-ms-transform: rotate(90deg) translateY(8px);
+		-o-transform: rotate(90deg) translateY(8px);
+		transform: (8px);
+	}
+}
+	.box{
+		&-tomi{
+			background-color: @bg-tomi;
+		}
+		&-koimona{
+			background-color: @bg-koimona;
+		}
+		&-koire{
+			background-color: @bg-koire;
+		}
+		&-lara{
+			background-color: @bg-lara;
+		}
+	}
+	i.fa-camera-retro{
+		-webkit-transform: rotate(-15deg);
+		-ms-transform: rotate(-15deg);
+		-o-transform: rotate(-15deg);
+		transform: rotate(-15deg);
+	}
+	.works-box{
+		height: 360px;
+		position: relative;
+	}
+	.signature{
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.8);
+		color: @white;
+		text-align: center;
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		-webkit-transition: all 0.2s;
+		-transition: all 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.sign{
+		p{
+			.open-bold;
+			font-size: 22px;
+		}
+		button{
+			border: none;
+			padding: 15px 35px;
+			border-radius: 50px;
+			background-color: @base-red;
+		}
+	}
+	.works-row{
+		margin-top: 3%;
+	}
+.services{
+  &-list{
+    list-style: none;
+    &-item{
+      display: block;
+      margin: 5px auto;
+      width: 100px;
+      height: 100px;
+      text-align: right;
+      background-color: @bg-services-list;
+    }
+  }
+  &-info{
+  	h4{
+  		font-size:30px;
+  	}
+  	p{
+  		font-size: 16px;
+  	}
+  }
+  &-line{
+  	width: 60px;
+  	height:4px;
+  	background-color: @base-red;
+  	display: inline-block;
+  	margin-bottom: 10px;
+  	margin-top: 10px;
+  }
+  &-btn{
+  	margin-top: 50px;
+  	border: none;
+  	border: 1px solid lighten(@base-black,50%);
+		color: @base-black;
+		padding: 15px 55px;
+		border-radius: 50px;
+		background-color: @white;
+		font-size: 16px;
+		&:hover{
+			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.21);
+		}
+  }
+}
+.panel-default>.panel-heading{
+	h4{
+		color: @base-red;
+		.open-bold;
+	}
+}
