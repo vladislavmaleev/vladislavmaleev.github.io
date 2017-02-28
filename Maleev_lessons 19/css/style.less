@@ -254,6 +254,9 @@ header{
 	.works-box{
 		height: 360px;
 		position: relative;
+		img{
+			width: 100%;
+		}
 	}
 	.signature{
 		opacity: 0;
@@ -302,8 +305,8 @@ header{
       height: 100px;
       text-align: right;
       background-color: @bg-services-list;
-      }
     }
+  }
   &-info{
   	h4{
   		font-size:30px;
@@ -446,4 +449,81 @@ footer{
 		border-radius: 50px;
 		box-shadow: 0px 11px 20px 0px rgba(20,20,21,0.12);
 	}
+}
+@media(min-width:0px) and(max-width:480px){
+	.main{
+		&-text{
+			h1{
+				font-size:26px;
+			}
+		}
+	}
+	.works{
+		&-box{
+			height: 287px;
+		}
+	}
+	.process{
+		&-box{
+			margin-top: 75px;
+		}
+	}
+	h2.xs-text{
+		font-size: 24px;
+	}
+	h4.xs-text{
+		font-size: 20px;
+	}
+	body.xs-text{
+		font-size: 12px;
+	}
+	p.xs-text{
+		font-size: 12px;
+	}
+	.working{
+		&-process{
+			&-xs{
+				margin-top: 70px;
+			}
+		}
+	}
+	.services{
+		&-list{
+			&-item{
+				display: inline-block;
+			}
+		}
+	}
+}
+@media(min-width:481px) and(max-width:767px){
+	.process{
+		&-box{
+			margin-top: 75px;
+		}
+	}
+}
+@media(min-width:768px) and(max-width:991px){
+	.process{
+		&-box{
+			margin-top: 75px;
+		}
+	}
+	.works{
+		&-box{
+			height: 220px;
+		}
+	}
+}
+@media(min-width:992px) and(max-width:1199px){
+	.works{
+		&-box{
+			height: 294px;
+		}
+	}
+}
+@media(min-width:1200px) and(max-width:1600px){
+	
+}
+@media(min-width:1601px){
+	
 }
