@@ -1,0 +1,137 @@
+.open-reg{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.open-bold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+@bg-yellow: #ffcb0f;
+@base-yellow: #ffcb0f;
+@base-blue: #222533;
+@base-text: #484848;
+@base-form: #fedb5d;
+@base-sapphirine: #f2f7fa;
+body{
+	font-size: 14px;
+	.open-reg;
+	color: @base-text;
+}
+
+.main-header{
+	#logo{
+		font-size: 35px;
+		.open-bold;
+	}
+	h1{
+		font-size: 50px;
+		.open-bold;
+	}
+}
+.section-header{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	h2,{
+		font-size: 50px;
+		.open-bold;
+	}
+	h4{
+		font-size: 14px;
+		.open-bold;
+	}
+}
+.around{
+	background-color: @base-yellow;
+  width:180px;
+  height:180px;
+  position:relative;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1%;
+}
+.circle-1 {
+  background-color: lighten(@base-yellow, 10%);
+  top: 5%; left:5%;
+  width:90%;
+  height:90%;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-2 {
+  background-color: lighten(@base-yellow, 20%);
+  top: 10%; left:10%;
+  width:80%;
+  height:80%;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-3 {
+  background-color: white;
+  top: 15%; left: 15%;
+  width:70%;
+  height:70%;
+  position: absolute;
+  border-radius: 50%; 
+}
+.circle-4 {
+  position: absolute;
+  top: 20%; left: 12%;
+  font-size: 180px;
+}
+.fa-users {
+  position: absolute;
+  top: 32%; left: 32%;
+}
+.choose{
+	margin-top: 210px;
+}
+.feedback-box{
+	img{
+		width: 280px;
+	}
+	h4{
+		padding-top: 2%;
+	}
+	p{
+		padding-bottom: 2%;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+.slick-active{
+	outline: none;
+}
+#gallery{
+	background: url(../img/10.jpg) 0 0 no-repeat;
+	/* background-blend-mode: luminosity; */
+}
+.portfolio-category {
+ 	margin-bottom:30px; 
+}
+.portfolio-category li { 
+  	display:inline;
+  	margin-right: 10px; 
+}
+.image-block { 
+  	display:block;
+  	position: relative;
+  	img{
+  		border: 1px solid @base-text;
+    	border-radius: 4px 4px 4px 4px;
+    	background:#FFFFFF;
+    	&:hover{
+    		border: 1px solid @base-yellow;
+     		box-shadow:0 0 5px #A9CF54;
+    	}
+  	}
+}
+.portfolio-area li { 
+    float: left;
+    margin: 2px;
+    overflow: hidden;
+    width: 245px;
+    padding:2px;
+}
+li.active a {
+	text-decoration:underline; 
+}

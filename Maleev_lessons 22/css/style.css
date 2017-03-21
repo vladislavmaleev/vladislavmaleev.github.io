@@ -22,6 +22,7 @@ section {
   padding-bottom: 5%;
 }
 .section-header {
+  margin-top: 15%;
   margin-bottom: 7%;
 }
 .section-header h2 {
@@ -45,7 +46,7 @@ header {
   margin-top: 3%;
 }
 .main-logo-border {
-  border: 3px solid #ffffff;
+  border: 3px solid #706b73;
   width: 155px;
   height: 55px;
   text-align: center;
@@ -55,7 +56,7 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 36px;
-  color: #ffffff;
+  color: #706b73;
 }
 .main-logo-border p span {
   color: #fbaf9f;
@@ -75,6 +76,7 @@ header {
   font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  color: #706b73;
 }
 .main-text h1 span {
   color: #fa9a87;
@@ -432,7 +434,7 @@ footer {
     font-size: 26px;
   }
   .works-box {
-    height: 287px;
+    width: 287px;
   }
   .process-box {
     margin-top: 75px;
@@ -456,6 +458,9 @@ footer {
     display: inline-block;
   }
 }
+.signature {
+  height: 287px;
+}
 @media (min-width: 481px) and (max-width: 767px) {
   .process-box {
     margin-top: 75px;
@@ -470,9 +475,24 @@ footer {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .process-box {
+    margin-top: 75px;
+  }
   .works-box {
     height: 294px;
   }
+}
+.services-list {
+  list-style: none;
+  text-align: center;
+}
+.services-list-item {
+  display: inline-block;
+  margin: 5px auto;
+  width: 100px;
+  height: 100px;
+  text-align: right;
+  background-color: #fbfbfb;
 }
 .overlay-nav {
   display: none;
