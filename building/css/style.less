@@ -6,9 +6,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 }
-@bg-yellow: #ffcb0f;
 @base-yellow: #ffcb0f;
 @base-blue: #222533;
+@base-logo-p: #b7b7b7;
 @base-text: #484848;
 @base-form: #fedb5d;
 @base-sapphirine: #f2f7fa;
@@ -17,20 +17,76 @@ body{
 	.open-reg;
 	color: @base-text;
 }
-
-.main-header{
-	#logo{
-		font-size: 35px;
-		.open-bold;
+#logo{
+	margin-top: 4px;
+	margin-bottom: 0;
+	color: @base-yellow;
+	font-size: 2.7em;
+	.open-bold;
+}
+.info{
+background-color: @base-yellow;
+}
+.main{
+	&-info{
+		height: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
-	h1{
-		font-size: 50px;
-		.open-bold;
+	&-web{
+		padding-right: 10px;
+		font-size: 1.2em;
+	}
+	&-header{
+		h1{
+			margin-top: 7rem;
+			margin-bottom: 3rem;
+			color: white;
+			font-size: 4.8em;
+			.open-bold;
+			span{
+				color: @base-yellow;
+			}
+		}
+		p{
+			margin-top: 1rem;
+			margin-bottom: 10rem;
+			color: white;
+		}
 	}
 }
+.banner{
+	background-color: #222533;
+	height: 10rem;
+}
+span.logo{
+	color: @base-logo-p;
+	p.text-center{
+		margin-top: 0;
+	}
+}
+ul.nav {
+	width: 755px;
+	margin-top: 4rem;
+	/* padding: 35px; */
+	li {
+		display: inline;
+		a{
+			color: white;
+			display: inline;
+			outline: none;		
+			&:focus{
+				outline: none;
+			}
+			&:hover{
+				color: @base-yellow;
+			}
+		}
+	}	
+}
 .section-header{
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	h2,{
 		font-size: 50px;
 		.open-bold;
@@ -40,8 +96,32 @@ body{
 		.open-bold;
 	}
 }
+#title{
+	height: 90vh;
+	background: url(../img/bg-car.jpg) 0 0 no-repeat;
+}
+a.main-btn {
+		.open-bold;
+		font-size: 1.2em;
+		padding: 15px;
+		background-color: @base-yellow;
+		color: white;
+		text-decoration: none;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+		&:hover{
+			background-color: @base-blue;
+			color: @base-yellow;
+		}
+		&-left{
+			margin-right: 100px;
+		}
+}
 .around{
-	background-color: @base-yellow;
+background-color: @base-yellow;
   width:180px;
   height:180px;
   position:relative;
@@ -87,7 +167,7 @@ body{
 }
 .feedback-box{
 	img{
-		width: 280px;
+		width: 90px;
 	}
 	h4{
 		padding-top: 2%;
@@ -101,37 +181,15 @@ body{
 .slick-active{
 	outline: none;
 }
-#gallery{
-	background: url(../img/10.jpg) 0 0 no-repeat;
-	/* background-blend-mode: luminosity; */
+section#gallery{
+	background: url(../img/bg-galery.jpg) 0 0 no-repeat;
 }
-.portfolio-category {
- 	margin-bottom:30px; 
+.small{
+	width: 300px;
+	height: 230px;
 }
-.portfolio-category li { 
-  	display:inline;
-  	margin-right: 10px; 
-}
-.image-block { 
-  	display:block;
-  	position: relative;
-  	img{
-  		border: 1px solid @base-text;
-    	border-radius: 4px 4px 4px 4px;
-    	background:#FFFFFF;
-    	&:hover{
-    		border: 1px solid @base-yellow;
-     		box-shadow:0 0 5px #A9CF54;
-    	}
-  	}
-}
-.portfolio-area li { 
-    float: left;
-    margin: 2px;
-    overflow: hidden;
-    width: 245px;
-    padding:2px;
-}
-li.active a {
-	text-decoration:underline; 
+.footer{
+	&-list{
+		list-style-type: none;
+	}
 }

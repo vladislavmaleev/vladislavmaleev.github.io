@@ -12,10 +12,10 @@
     </style>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="js/slick/slick.css" rel="stylesheet">
     <link rel="stylesheet" href="css/prettyPhoto.css">
     <link href="js/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,85 +25,74 @@
     <![endif]-->
   </head>
   <body>
-    <header id="main">
+    <section class="info">
+      <div class="container">
+        <div class="row main-info">
+          <div class="col-sm-2">
+            <p><i class="fa fa-phone"></i> 8-800-123-34-34</p>
+          </div>
+          <div class="col-sm-3">
+            <p><i class="fa fa-envelope"></i> msservis-sro@yandex.ru</p>
+          </div>
+          <div class="col-sm-2">
+            <p><i class="fa fa-clock-o"></i> Пн - Пт 9:00 - 17:00</p>
+          </div>
+          <div class="col-sm-2 col-sm-offset-3 text-left">
+            <i class="fa fa-facebook main-web"></i> 
+            <i class="fa fa-twitter main-web"></i> 
+            <i class=" fa fa-youtube main-web"></i> 
+            <i class=" fa fa-odnoklassniki main-web"></i> 
+          </div>
+        </div><!-- Конец .row -->
+      </div>
+    </section>
+
+    <header id="main" class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-sm-2">
-            <div class="main-info">
-              <i class="fa fa-phone"></i>
-              <p>8-800-123-34-34</p>
+          <div class="col-sm-4">
+            <div class="main-header text-left">
+                <p Id="logo">Строй Индустрия</p>
+                <span class="logo">
+                <p class="text-center">Профессионально, качественно, выгодно</p>
+                </span>
             </div>
           </div>
-          <div class="col-sm-2">
-            <div class="main-info">
-              <i class="fa fa-envelope"></i>
-              <p>msservis-sro@yandex.ru</p>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="main-info">
-              <i class="fa fa-clock-o"></i>
-              <p>Пн - Пт 9:00 - 17:00</p>
-            </div>
-          </div>
-          <div class="col-sm-2 col-sm-offset-4">
-            <div class="main-info">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter"></i>
-              <i class=" fa fa-youtube"></i>
-              <i class=" fa fa-odnoklassniki"></i>
-            </div>
-          </div>
-          </div>
-        </div> <!-- Конец .row -->
-        <div class="row">
-            <div class="col-sm-5 main-logo">
-              <div class="main-header">
-                <p Id="logo">Строй индустрия</p>
-                <p>Профессионально, качественно, выгодно</p>
-              </div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">Главная</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">О Нас</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">Приемущества</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">Сервис</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">Наши Проекты</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div clas="main-header"> Отзывы</div>
-            </div>
-            <div class="col-sm-1 main-nav">
-              <div class="main-header">Обратная Связь</div>
-            </div>
-          </div>
-        </div> <!-- конец .row main-header -->
+          <div class="col-sm-8">
+            <ul class="nav text-center">
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#about">О Нас</a></li>
+              <li><a href="#advantage">Приемущества</a></li>
+              <li><a href="#service">Сервис</a></li>
+              <li><a href="#gallery">Проекты</a></li>
+              <li><a href="#reviev">Отзывы</a></li>
+              <li><a href="#form">Связаться</a></li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+    </header> <!-- конец header#main -->
+
+    <section id="title">
+      <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
             <div class="main-header">
-              <h1>Строительные услуги креативно и Профессионально</h1>
-              <p>Компания «Строй индустрия» - многопрофильная строительная организация, которая с 1993 года, успешно работает на территории РФ</p>
+              <h1>Строительные услуги <span>креативно и профессионально</span></h1>
+              <p>Компания «Строй Индустрия» - многопрофильная строительная организация, которая с 1993 года, успешно работает на территории РФ</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
-            <button class="main-btn"><a href="#">Узнать подробнее</a></button>
+          <div class="col-sm-6 text-right">
+            <a class="main-btn" href="#about">Узнать подробнее</a>
           </div>
-          <div class="col-sm-6">
-            <button class="main-btn"><a href="#">Показать проекты</a></button>
+          <div class="col-sm-6 text-left">
+            <a class="main-btn" href="#gallery">Показать проекты</a>
           </div>
         </div>
       </div>
-    </header> 
+    </section>
 
     <!-- Информация о компании -->
 
@@ -132,7 +121,7 @@
 
         <div class="row">
           <div class="col-sm-12 text-center">
-            <div class="section-header">
+            <div id="advantage" class="section-header">
               <h2>Почему выбрать Нас?</h2>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
             </div>
@@ -228,6 +217,7 @@
             </div>
           </div>
         </div> <!-- Конец .row заголовка -->
+
         <div class="row">
           <div class="col-sm-12">
             <div class="feedback-slider">
@@ -275,92 +265,55 @@
           <div class="col-sm-12 text-center">
             <div class="section-header">
               <h2>Сделано с любовью</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum eius, dolor voluptates vel architecto assumenda quaerat deserunt, aliquid quos, fugit. Vitae dolore nemo animi!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore ratione similique, reiciendis quae aperiam non unde repellendus repudiandae porro quas, distinctio harum suscipit, dignissimos corporis nam. Deleniti, hic. Animi commodi voluptates ex voluptatum, quidem!</p>
             </div>
           </div>
-        </div> <!-- Конец .row header -->
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <ul class="portfolio-category filter">
-              <li>Категории:</li>
-              <li class="all active"><button><a href="#">Все</a></button></li>
-              <li class="category-item-1"><button><a href="#" title="Реставрация">Реставрация</a></button></li>
-              <li class="category-item-2"><button><a href="#" title="Дезайн">Дезайн</a></button></li>
-              <li class="category-item-3"><button><a href="#" title="Оффис">Оффис</a></button></li>
-              <li class="category-item-4"><button><a href="#" title="Котеджи">Котеджи</a></button></li>
-            </ul>
-          </div>
-        </div> <!-- конец .row nav -->
-
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="portfolio-area">
-              <li class="portfolio-item-2" data-id="id-1" data-type="category-item-1">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/1.jpg" rel="prettyPhoto[galery]" title="№"><img width="225" height="140" src="img/1.jpg" alt="1" title="1" /></a>
-                    </span>             
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-2" data-type="category-item-2">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/2.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/2.jpg" alt="#" title="2" /></a>
-                    </span>               
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-3" data-type="category-item-2">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/3.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/3.jpg" alt="#" title="3" /></a>
-                    </span>              
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-4" data-type="category-item-4">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/4.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/4.jpg" alt="#" title="4" /></a>
-                    </span>             
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-5" data-type="category-item-3">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/5.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/5.jpg" alt="#" title="5" /></a>
-                    </span>             
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-6" data-type="category-item-4">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/6.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/6.jpg" alt="#" title="6" /></a>
-                    </span>               
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-7" data-type="category-item-3">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/7.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/7.jpg" alt="#" title="7" /></a>
-                    </span>            
-                 </div>   
-              </li>
-
-              <li class="portfolio-item-2" data-id="id-8" data-type="category-item-1">   
-                 <div>
-                    <span class="image-block">
-                       <a class="image-zoom" href="img/8.jpg" rel="prettyPhoto[galery]" title="#"><img width="225" height="140" src="img/8.jpg" alt="#" title="8" /></a>
-                    </span>            
-                 </div>   
-              </li>
-            </ul>
-          </div>
         </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="col-xs-8 col-xs-offset-4 text-left">
+
+              <button class="btn btn-xl btn-primary sorter" data-filter="*">Показать все</button>
+        
+              <button class="btn btn-xl btn-primary sorter" data-filter="Cottage">Котеджи</button>
+              
+              <button class="btn btn-xl btn-primary sorter" data-filter="office">Офисы</button>
+              
+              <button class="btn btn-xl btn-primary sorter" data-filter="design">Дезайн</button>
+              
+              <button class="btn btn-xl btn-primary sorter" data-filter="restoration">Рестоврация</button>
+              
+            </div>
+          </div>
+        </div> <!-- конец юrow nav -->
+
+        <ul id="sort-me">
+          <li class="Cottage" data-title="4" data-order="4">
+                <img class="small" src="img/Cottage/4.jpg">
+          </li>
+          <li class="Cottage small" data-title="6" data-order="6">
+                <img src="img/Cottage/6.jpg">
+          </li>
+          <li class="office" data-title="5" data-order="5">
+              <img src="img/office/5.jpg">
+          </li>
+          <li class="office" data-title="7" data-order="7">
+              <img src="img/office/7.jpg">
+          </li>
+          <li class="design" data-title="2" data-order="2">
+              <img src="img/design/2.jpg">
+          </li>
+          <li class="design" data-title="3" data-order="3">
+              <img src="img/design/3.jpg">
+          </li>
+          <li class="restoration" data-title="1" data-order="1">
+              <img src="img/restoration/1.jpg">
+          </li>
+          <li class="restoration" data-title="8" data-order="8">
+              <img src="img/restoration/8.jpg">
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -368,7 +321,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="section-header">
+            <div class="section-header text-center">
               <h2>Отзывы клиентов</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse voluptates eaque expedita temporibus doloribus quasi! Recusandae amet similique magnam consectetur atque minima harum, corrupti assumenda numquam voluptas?</p>
             </div>
@@ -381,25 +334,29 @@
               <div class="feedback-slider-item text-center">
                 <div class="feedback-box">
                   <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque minima, accusamus id aperiam ducimus maxime. Quibusdam, nobis numquam?</p>
-                  <img class="img-circle center-block feedback-img" src="img/manager.jpg" alt="#">
+                  <img class="img-circle center-block feedback-img" src="img/coment/4.jpg" alt="#">
+                  <p>Джон Смит</p>
                 </div>
               </div>
               <div class="feedback-slider-item text-center">
                 <div class="feedback-box">
                   <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque minima, accusamus id aperiam ducimus maxime. Quibusdam, nobis numquam?</p>
-                  <img class="img-circle center-block feedback-img" src="img/manager.jpg" alt="#">
+                  <img class="img-circle center-block feedback-img" src="img/coment/3.jpg" alt="#">
+                  <p>Джон Смит</p>
                 </div>
               </div>
               <div class="feedback-slider-item text-center">
                 <div class="feedback-box">
                   <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque minima, accusamus id aperiam ducimus maxime. Quibusdam, nobis numquam?</p>
-                  <img class="img-circle center-block feedback-img" src="img/manager.jpg" alt="#">
+                  <img class="img-circle center-block feedback-img" src="img/coment/2.jpg" alt="#">
+                  <p>Джон Смит</p>
                 </div>
               </div>
               <div class="feedback-slider-item text-center">
                 <div class="feedback-box">
                   <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque minima, accusamus id aperiam ducimus maxime. Quibusdam, nobis numquam?</p>
-                  <img class="img-circle center-block feedback-img" src="img/manager.jpg" alt="#">
+                  <img class="img-circle center-block feedback-img" src="img/coment/1.jpg" alt="#">
+                  <p>Джон Смит</p>
                 </div>
               </div>
             </div>
@@ -408,124 +365,142 @@
       </div>
     </section> <!-- конец слайдера "Отзывы" -->
 
-    
+    <section id="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <h2>У Вас осталась пара вопросов?</h2>
+            <p><span>Не стесняйтесь связаться с нами!</span></p>
+          </div>
+          <div class="col-sm-6">
+            <div class="main-form">
+              <form id="main-form" action="#">
+                <input id="userName" type="text" placeholder="Ваше Имя">
+                <input type="email" id="email" placeholder="Ваша почта">
+                <textarea name="user_message" placeholder="Ваше сообщение"  rows="1"></textarea>
+                <button id="submit-form" class="main-form-btn" type="submit">SUBMIT<span class="sign">&rarr;</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- конец формы "обратная связь" -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-left">
+            <p><span>О компании</span></p>
+            <h2>Строй индустрия</h2>
+            <p><span>Профессионально, качественно, выгодно</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim architecto dolore necessitatibus maxime quisquam?</p>
+          </div>
+          <div class="col-sm-4 text-left">
+            <p><span>Навигация по сайту</span></p>
+            <ul class="footer-list">
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#main">Главная</a></li>
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#about">О Нас</a></li>
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#service">Сервис</a></li>
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#gallery">Галлерея</a></li>
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#reviev">Отзывы</a></li>
+              <li><i class="fa fa-sort-asc fa-rotate-90" aria-hidden="true"></i> <a href="#form">Обратная связь</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 text-left">
+            <p><span>Связаться с Нами</span></p>
+            <p><i class="fa fa-map-marker"></i> 124 New Line, London UK</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> msservis-sro@yandex.ru</p>
+            <p><i class="fa fa-mobile" aria-hidden="true"></i> 8-800-123-34-34</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
-  
+
+        
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="js/slick/slick.min.js"></script> 
-      <script src="js/jquery.parallax.js"></script>
-      <script src="js/jquery.quicksand.js"></script>
-      <script src="js/jquery.easing.js"></script>
-      <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick/slick.min.js"></script> 
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/gallary.js"></script>
 
-      <script>$('#scene').parallax();
-      </script>
 
-      <script> 
-      $(document).ready(function(){
-        $('.feedback-slider').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          arrows: true,
-          prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
-          nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
-          dots: true,
-          responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 320,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+
+    <script>$('#scene').parallax();
+    </script>
+
+    <script> 
+    $(document).ready(function(){
+      $('.feedback-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: true,
+        nextArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
+        prevArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
+        dots: true,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
-          });
+    ]
         });
-     </script>
+      });
+    </script>
 
-     <script> 
-      $(document).ready(function(){
-        $('.slick-review').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          arrows: true,
-          prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
-          nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
-          dots: true,
-          responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 320,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+    <script> 
+    $(document).ready(function(){
+      $('.slick-review').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: true,
+        nextArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
+        prevArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
+        dots: true,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
           }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
-          });
+    ]
         });
-     </script>
-
-     <script>
-       var $data = $(".portfolio-area").clone();
-   
-   $('.portfolio-category li').click(function(e) {
-      $(".filter li").removeClass("active"); 
-      
-      var filterClass=$(this).attr('class').split(' ').slice(-1)[0];
-      
-      if (filterClass == 'all') {
-         var $filteredData = $data.find('.portfolio-item-2');
-      } else {
-         var $filteredData = $data.find('.portfolio-item-2[data-type=' + filterClass + ']');
-      }
-      $(".portfolio-area").quicksand($filteredData, {
-         duration: 600,
-         adjustHeight: 'auto'
-      }, function () {
-
-            lightboxPhoto();
-                  });      
-      $(this).addClass("active");         
-      return false;
-   });
-     </script>
-     <script>
-       jQuery("a[rel^='prettyPhoto']").prettyPhoto({
-            animationSpeed: 'fast',
-            slideshow: 5000,
-            theme: 'facebook',
-            show_title: false,
-            overlay_gallery: false
-        });
-     </script>
+      });
+    </script>
   </body>
 </html>
